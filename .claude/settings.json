@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(./verify.py)",
+      "Edit(./tests/**)",
+      "Edit(./VERIFIER.sha256)",
+      "Edit(./CLAUDE.md)"
+    ]
+  }
+}

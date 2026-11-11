@@ -1,0 +1,4 @@
+{
+  "_doc": "Filled in phase 1. Each entry: n, upper (string, as published), lower (optional), proven_optimal, source (URL), retrieved (date), note.",
+  "records": []
+}
