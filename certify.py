@@ -20,7 +20,7 @@ larger than the float S; raise --den for tighter certificates.
 
 Usage:
   python3 certify.py float.json out_cert.json [--den 10**12]
-Then ALWAYS run: python3 verify.py out_cert.json --compare records.json
+Then ALWAYS run: python3 verify.py out_cert.json --compare RUN_DIR/records.json
 """
 from __future__ import annotations
 
@@ -120,7 +120,7 @@ def main(argv):
     }
     json.dump(cert, open(argv[2], "w"), indent=1)
     print(f"wrote {argv[2]}: n={n} S={decimal(S, 15)} (lambda-1 = {float(lam - 1):.3e})")
-    print("now run: python3 verify.py", argv[2], "--compare records.json")
+    print("now run: python3 verify.py", argv[2], "--compare <RUN_DIR>/records.json")
     return 0
 
 

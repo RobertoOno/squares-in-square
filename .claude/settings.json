@@ -2,9 +2,12 @@
   "permissions": {
     "deny": [
       "Edit(./verify.py)",
+      "Edit(./certify.py)",
       "Edit(./tests/**)",
       "Edit(./VERIFIER.sha256)",
-      "Edit(./CLAUDE.md)"
+      "Edit(./AGENTS.md)",
+      "Edit(./CLAUDE.md)",
+      "Edit(./PROMPT.md)"
     ]
   }
 }

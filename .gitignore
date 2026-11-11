@@ -1,3 +1,2 @@
-work/*
-!work/.gitkeep
+runs/*/work/*
 __pycache__/
