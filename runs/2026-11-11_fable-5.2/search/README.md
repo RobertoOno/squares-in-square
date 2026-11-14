@@ -55,6 +55,22 @@ only the frozen top-level `verify.py` does (via `make_cert.py`, which calls the 
 | `add_kaggle_source.py` | adds the Kaggle per-puzzle leaderboard (best side per n, side only) to `../records.json` as a third source; where a team's side is lower, it becomes `upper`. This is what showed that the two "candidates" were not improvements |
 | `kaggle_check_table.py` | writes `../evidence/kaggle_per_puzzle_check.md`, the comparison of that table with the two catalogues |
 
+## Follow-up after the run (2026-11-14, human-steered; see `../FOLLOWUP.md`)
+
+| file | purpose |
+|---|---|
+| `fu_pinwheel.py` | tilted blocks (Ryu/Fang band geometry) plus an exact refill of the upright squares: maximum independent set over the four corner-anchored grids, HiGHS MILP; optional tolerance for small dips |
+| `fu_scan.py`, `fu_refine.py` | random scan and hill climbing (with tapered rows) over two-block layouts |
+| `fu_subwindow.py` | corner-anchored sub-window closure over the public packings |
+| `fu_refill_public.py` | exact refill around the tilted cores of public packings near the grid crossover |
+| `fu_core.py` | edits of a parent's tilted core (slide, insert or remove a bar, lengthen or shorten a bar) with exact refill |
+| `fu_softseed.py` | one more square from a tolerant refill, then penalty repair and exact polish |
+
+| `fu_strict_check.py` | exact check under the stricter convention (positive wall margins, strictly separated pairs) and export to the text format `n S` / `x y t`. Not a judge |
+| `fu_registration.py` | writes the strict variants and the draft registration requests under `../evidence/registration/` (drafts only) |
+
+All follow-up searches are negative; none of these scripts produced a new certificate.
+
 Remote orchestration (no secrets): `../work/remote/rp.sh`, `rpcp.sh`, `sync_one.sh`, `sync_loop.sh`,
 `guard.sh` (see RUN.md).
 
