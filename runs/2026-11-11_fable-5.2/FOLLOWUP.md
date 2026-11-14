@@ -96,3 +96,16 @@ repository rules say to write only here. Follow-up code is in `search/fu_*.py`, 
   side-only entries first, and ask that Evan Daniel's n = 229 packing and Francisco Couzo's n = 404
   packing be credited as the starts. In these copies the pinned revision is a placeholder, because a
   file cannot name the commit that contains it; the posted requests carry the full commit id.
+
+## Registration requests posted (2026-11-14)
+
+- The human approved the two requests with the credit name "Roberto Ono" and the push of this branch.
+- Branch pushed to the public repository at revision fce076f2bf459a25be3645d899e8950b93ed977c. A fresh
+  clone of that revision reproduces every check (verifier hash and tests, the frozen verifier on the
+  two certificates and on the two strict variants, the independent check, the strict check).
+- Last look at the registry before posting, 20:10:56 UTC: no claim for either side; registry head
+  fa980f8e70; cases n-147 and n-228 unchanged.
+- https://github.com/jlevy/squares/issues/984 : s(228) ≤ 15.596043120921, posted 20:11:25 UTC.
+- https://github.com/jlevy/squares/issues/985 : s(147) ≤ 12.651043556588, posted 20:11:26 UTC.
+- `evidence/registration/issue_n147.md` and `issue_n228.md` are the texts as posted. Both are claims of a
+  first public packing, not of a record.

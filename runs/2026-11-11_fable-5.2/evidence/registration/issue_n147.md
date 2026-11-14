@@ -1,4 +1,4 @@
-<!-- Text of the registration request (the full commit id is filled in when the request is posted). Title: s(147) ≤ 12.651043556588: first public packing below 7 + 4√2 (registration request) -->
+<!-- Text of the registration request (as posted). Title: s(147) ≤ 12.651043556588: first public packing below 7 + 4√2 (registration request) -->
 
 **Leaderboard disclosure first.** This packing improves the registry but does **not** beat the Kaggle per-puzzle leaderboard, which lists side 12.651043553172632772258400… for team Nevska (submitted 2026-11-07 06:15:05 UTC; notebook version 31, read 2026-11-14 19:22 UTC) with no packing. Our exact side is 3.415e-09 larger. The side-only entry supplies nothing we can check. As far as we know this is the first public packing at that side.
 
@@ -6,7 +6,7 @@
 
 **Claim.** s(147) ≤ **12.651043556588** (exact rational side rounded up at 12 places; the exact side in the certificate is 12.651043556587694471904370629016…). The registry holds 12.65685424949238 (= 7 + 4√2) for n = 147 (case n-147, reviewed 2026-11-04, main @fa980f8e); no request is open for this count. The improvement over the registry is 0.005810692904685. This is feasibility only: no optimality, KKT or rigidity claim.
 
-**Certificate.** Repository https://github.com/RobertoOno/squares-in-square at revision `<COMMIT>`:
+**Certificate.** Repository https://github.com/RobertoOno/squares-in-square at revision `fce076f2bf459a25be3645d899e8950b93ed977c`:
 - `runs/2026-11-11_fable-5.2/certificates/n147_S65104355.json`: exact rational certificate; each unit square is its centre (cx, cy) and t = tan(θ/2), so cos θ and sin θ are rational; the side is a fraction. SHA-256 `fce8c8c20bf3812173c76c6a2c1295541a72b23a9c948bdf380cc905d2038135`.
 - `runs/2026-11-11_fable-5.2/evidence/registration/n147.cert`: the same packing as text, line 1 `n S`, then `x y t` per square. SHA-256 `0e09260712370f6561df1e9c0c835adc04f7d9f49ad40ad0e603c6c6a8cc11af`.
 - `runs/2026-11-11_fable-5.2/evidence/registration/n147.strict.cert` (and `.strict.json`): the same packing moved by (10⁻¹⁵, 10⁻¹⁵) in a square of side S + 2·10⁻¹⁵ = 12.651043556587696471…, for checkers that require positive wall margins. In the first two files the packing touches the four walls (wall margin exactly 0), because the side is the extent of the packing. SHA-256 `cfe0079654a433e4cb2739405f9d523c5557f7182618bc8fb33b656999a7a6ce`.

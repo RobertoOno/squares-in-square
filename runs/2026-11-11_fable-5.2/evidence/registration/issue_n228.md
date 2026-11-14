@@ -1,4 +1,4 @@
-<!-- Text of the registration request (the full commit id is filled in when the request is posted). Title: s(228) ≤ 15.596043120921: first public packing at the leaderboard side (registration request) -->
+<!-- Text of the registration request (as posted). Title: s(228) ≤ 15.596043120921: first public packing at the leaderboard side (registration request) -->
 
 **Leaderboard disclosure first.** This packing improves the registry but does **not** beat the Kaggle per-puzzle leaderboard, which lists side 15.596043116631669919627353… for team Nevska (submitted 2026-11-08 11:50:15 UTC; notebook version 31, read 2026-11-14 19:22 UTC) with no packing. Our exact side is 4.289e-09 larger. The side-only entry supplies nothing we can check. As far as we know this is the first public packing at that side. An earlier side-only entry, 15.596043116646272293906688… for team square1000 (2026-10-29 14:18:39 UTC), is 4.275e-09 below ours. The open request #983 (side 15.600801734812, Doğa Özden) is 0.004758613890 above this packing; we have not compared the two arrangements.
 
@@ -6,7 +6,7 @@
 
 **Claim.** s(228) ≤ **15.596043120921** (exact rational side rounded up at 12 places; the exact side in the certificate is 15.596043120920791646977220704185…). The registry holds 15.60460147572967429 for n = 228 (Francisco Couzo, improved by PingYou Ltd, 2026-10-13; case n-228, main @fa980f8e). The improvement over the registry is 0.008558354808882. This is feasibility only: no optimality, KKT or rigidity claim.
 
-**Certificate.** Repository https://github.com/RobertoOno/squares-in-square at revision `<COMMIT>`:
+**Certificate.** Repository https://github.com/RobertoOno/squares-in-square at revision `fce076f2bf459a25be3645d899e8950b93ed977c`:
 - `runs/2026-11-11_fable-5.2/certificates/n228_S59604312.json`: exact rational certificate; each unit square is its centre (cx, cy) and t = tan(θ/2), so cos θ and sin θ are rational; the side is a fraction. SHA-256 `98987101c5a14e84cc1bdcb7497cc139be6ef71a17f7e7ec9ce3f89c80274944`.
 - `runs/2026-11-11_fable-5.2/evidence/registration/n228.cert`: the same packing as text, line 1 `n S`, then `x y t` per square. SHA-256 `be120af6c2fc1e7b6a56deb8a3cee31e2abc4606be98ecfcfebcc889ab51e3f4`.
 - `runs/2026-11-11_fable-5.2/evidence/registration/n228.strict.cert` (and `.strict.json`): the same packing moved by (10⁻¹⁵, 10⁻¹⁵) in a square of side S + 2·10⁻¹⁵ = 15.596043120920793646…, for checkers that require positive wall margins. In the first two files the packing touches the four walls (wall margin exactly 0), because the side is the extent of the packing. SHA-256 `e243de776d011ab24f6221df42bbf6fc55de33c9c7612b92a2008777cff48569`.
